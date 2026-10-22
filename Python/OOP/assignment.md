@@ -34,3 +34,27 @@ Give it a method called activate_turbo_mode(self):
 It should print: 🚀 Turbo fan spinning on [self.model]! FPS boosted!
 
 And it should drain 15 battery from self.battery.
+
+
+sample
+
+
+class Smartphone:
+    def __init__(self, brand, model):
+        # TODO: Set brand, model, and default battery = 100
+        pass
+
+    def use_app(self, app_name, battery_drain):
+        # TODO: Subtract battery_drain if there is enough battery
+        pass
+
+    def charge(self):
+        # TODO: Reset battery to 100
+        pass
+
+
+# --- TEST YOUR CODE WITH THIS ---
+my_phone = Smartphone("Samsung", "Galaxy S24")
+my_phone.use_app("TikTok", 30)      # Should drop battery to 70%
+my_phone.use_app("Genshin Impact", 80) # Should say battery too low!
+my_phone.charge()                   # Should go back to 100%
